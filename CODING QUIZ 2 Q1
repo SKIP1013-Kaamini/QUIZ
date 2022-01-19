@@ -1,0 +1,32 @@
+package ex2;
+import java.util.Scanner;
+class Quiz2_Q1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		double numclass;
+		double numattend;
+		String name;
+		double percentage;
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Please enter your name");
+		name = scan.next();
+		System.out.println("Enter the number of classes held:");
+		numclass = scan.nextDouble();
+		System.out.println("Enter the number of class attend:");
+		numattend = scan.nextDouble();
+		System.out.println("Name : " +name);
+		System.out.println("Number of classes held:" +numclass);
+		System.out.println("Number of classes attend:" +numattend);
+		percentage = (numattend/numclass)*100;
+		System.out.printf("Percentage of attendance: %.2f" ,percentage);
+		if (percentage <= 74)
+			System.out.println("\nYou are not allowed to sit for exam");
+		else if(percentage >= 75)
+			System.out.println("\nYou are allowed to sit exam");
+		
+
+	}
+
+}
