@@ -1,0 +1,28 @@
+package ex2;
+import java.util.Scanner;
+class Quiz2_Q2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	
+		int num ;
+		int numreverse = 0;
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Please enter a positive integer :");
+		num = scan.nextInt();
+		System.out.println("The number entered:" + num);
+		
+		while (num != 0) {
+			int integer = num % 10;
+			numreverse = numreverse * 10 + integer;
+			
+			num /= 10;
+		}
+		System.out.println("The reversed number :" +numreverse);
+
+	}
+
+}
